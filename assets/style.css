@@ -2232,8 +2232,14 @@ a:focus {
 
 @media (max-width: 470px) {
   .wedding-couple-section .img-holder img {
+/*
     opacity: 1;
     visibility: visible;
+*/
+    max-height: 250px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -2387,8 +2393,26 @@ a:focus {
 
 @media (max-width: 470px) {
   .wedding-couple-section .img-holder {
-    background: none !important;
+/*    background: none !important;*/
   }
+    .wedding-couple-section .gb .img-holder, .story-section .story-timeline img{
+        border-radius: 30px 30px 0px 0px !important;
+    }
+    .wedding-couple-section .gb .details, .story-section .story-timeline .story-text {
+        border-radius: 0px 0px 30px 30px;
+    }
+    .story-section .story-timeline img{
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+    }
+    .wedding-couple-section .bride, .story-section .story-timeline > .row{
+        display: grid;
+    }
+    .wedding-couple-section .gb.bride .details, .story-section .story-timeline .text-holder {
+        -webkit-order: 1;
+        order: 1;
+    }
 }
 
 /*--------------------------------------------------------------
